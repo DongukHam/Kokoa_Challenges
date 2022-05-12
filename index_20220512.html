@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style_20220512.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create An Account on 12th May, 2022</title>
+</head>
+<body>
+    <div class="titleName">
+        <h1>Create An Account</h1>
+    </div>
+
+<!-- label의 for element와 이하 id가 메칭 됨 -->
+
+    <form action="">
+        <label for="firstname">First name
+            <input type="text" id="firstname" placeholder="First name" required>
+        </label>
+            
+        <label for="lastname">Last name
+            <input type="text" id="lastname" placeholder="Last name" required>
+        </label>
+        
+        <label for="email">Email
+            <input type="email" id="email" placeholder="Email" required>
+        </label>
+        
+        <label for="username">Username
+            <input type="text" id="username" placeholder="Username" required>
+        </label>
+        
+        <label for="password">Password
+            <input type="password" id="password" placeholder="Password" required minlength="10" >
+        </label>
+        
+        <label for="birthdate">Birth date
+            <input type="date" id="birthdate" placeholder="Birth date" required>
+        </label>
+        
+        <label for="happy">How happy are you?
+            <input type="range" id="happy" list="happyRange">
+            <datalist id="happyRange">
+                <option value="0">
+                <option value="10">
+                <option value="20">
+                <option value="30">
+                <option value="40">
+                <option value="50">
+                <option value="60">
+                <option value="70">
+                <option value="80">
+                <option value="90">
+                <option value="100">
+            </datalist>
+        </label>   
+        
+        <label for="color">What is your fav. color?
+            <input type="color" id="color">
+        </label>
+        <label for="create">   
+            <input type="submit" id="create" value="Create Account" size="20">
+        </label>
+    </form>
+
+</body>
+</html>
