@@ -1,3 +1,35 @@
-.firstSquare {
+body {
   background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: rgb(245, 222, 179);
+  width: 300px;
+  height: 300px;
+  border: 3px black solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container_wide {
+  background-color: rgb(45, 138, 116);
+  width: 250px;
+  height: 60px;
+  border: 3px white dashed;
+}
+
+.container_small {
+  background-color: rgb(45, 138, 116);
+  width: 60px;
+  height: 60px;
+  border: 3px white solid;
 }
