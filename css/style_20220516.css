@@ -15,7 +15,7 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  align-item: center;
+  align-items: center;
   flex-wrap: wrap;
   width: 600px;
 }
@@ -46,16 +46,17 @@ body {
 
 .second_info {
   background-color: white;
-  width: 220px;
+  width: 100%px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-item: flex-start;
+  align-items: flex-start;
   font-weight: 900;
   padding: 25px 0px;
   position: absolute;
   top: 20px;
   left: 0px;
+  box-sizing: border-box;
 }
 
 .info_name {
