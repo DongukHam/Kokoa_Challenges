@@ -78,8 +78,11 @@ section {
     from{
         transform:scaleY(1);
     }
-    50%{
+    30%{
         transform: scaleY(2);
+    }
+    50%{
+        transform: scaleY(1);
     }
     to{
         transform: scaleY(1);
