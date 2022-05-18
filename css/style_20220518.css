@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 500px;
+  border: 10px #01c7ad solid;
+}
+
+.title {
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  font-weight: 600;
+}
+.title > span:first-child {
+  width: 10%;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.title span:last-child {
+  width: 90%;
+  text-align: left;
+  margin-left: 130px;
+}
+
+.mainSong {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainSong .mainSong_pic > img {
+  margin-left: 30px;
+  border: 1px black solid;
+  border-radius: 10px;
+  width: 160px;
+}
+
+.mainSong_info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: left;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.mainSong_info > p:first-child {
+  font-size: 50px;
+  margin-right: 30px;
+  line-height: 1;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 700;
+}
+
+.mainSong_info > p:last-child {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.playButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 30px;
+  font-size: 20px;
+}
+
+.playButton > button {
+    margin:right:10px;
+}
+
+.playButton > button:first-child {
+  border: 1px black solid;
+  border-radius: 9px;
+  width: 200px;
+  font-size: 23px;
+  font-weight: 600;
+  padding: 10px;
+  border-width: 2px 2px 5px 2px;
+}
+
+.playButton > button:nth-child(2),
+.playButton > button:last-child {
+  width: 60px;
+  height: 60px;
+  border: 1px black solid;
+  border-radius: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border-width: 2px 2px 5px 2px;
+}
+
+li{
+    display: flex;
+    margin-bottom:40px;
+}
+.playlist {
+    list-style: none;
+}
+
+.playlist_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-left: 10px;
+}
+
+.playlist_photo{
+    width: 60px;
+    height:60px;
+    border:2px black solid;
+    border-radius: 10%;
+}
+
+.playlist_info_name{
+    font-size:20px;
+    font-weight: 600;
+    margin-bottom:5px;
+}
+
+.first{
+    background-color: #f85a2b;
+}
+
+.second {
+    background-color: #ff89bb;
+}
+
+.third {
+    background-color: #1847e4;
+}
+
+.fourth {
+    background-color: #01c7ad;
+}
