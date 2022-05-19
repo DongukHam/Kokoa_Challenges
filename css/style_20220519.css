@@ -1,70 +1,222 @@
 * {
-    box-sizing: border-box;
-  }
-
+  box-sizing: border-box;
+}
 
 :root {
-    --main-title-font-size: 30px;
+  --main-title-font-size: 30px;
 }
 
 body {
-    border: 1px black solid;
-    width:800px;
-    height:100vh;
-    
-    
+  width: 500px;
+  height: 100vh;
 }
 
 .wrapper {
-    position:relative;
-    background-color:rgb(245,245,245);
-    
+  position: relative;
+  background-color: rgb(245, 245, 245);
 }
 
 .menu {
-    background-color: #ffce33;
-    padding: 60px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: var(--main-title-font-size);
+  background-color: #ffce33;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
 }
 
-.menu > h1 {
-    font-weight: 600;
+.menu > p {
+  font-weight: 600;
 }
 
 .searching {
-   width:95%;
-   background-color: white;
-   padding:25px 15px;
-   border-radius: 30px;
-   display: flex;
-   justify-content: space-between;
-   position:absolute; 
-   top:120px;
-   left:2.5%;
+  width: 95%;
+  background-color: white;
+  padding: 25px 15px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 120px;
+  left: 2.5%;
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.1);
 }
 
-.searching__content{
-    opacity:0.3;
-    font-size: 20px;
+.searching__content {
+  opacity: 0.3;
+  font-size: 20px;
 }
 
-.searching__content:first-child{
-    margin-left:15px;
+.searching__content:first-child {
+  margin-left: 15px;
 }
 
-.book_of_the_day{
-    padding:80px 25px;
+.book_of_the_day {
+  padding: 80px 25px 0px 25px;
+  margin-bottom: 30px;
 }
 
-.fill{
-    color:#ffcf36;
+.book_of_the_day__title {
+  font-size: var(--main-title-font-size);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.book_of_the_day__info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+}
+
+.book_of_the_day__data {
+  margin-left: 25px;
+}
+
+.book_of_the_day__cover > img {
+  border-radius: 10px;
+  height: 200px;
+}
+
+h3 {
+  font-size: 23px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.book_of_the_day__data__base > article {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.book_of_the_day__data__base__rating {
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+.book_of_the_day__data__base__classification {
+  margin-bottom: 30px;
+}
+
+.book_of_the_day__data__base__classification > span {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.book_of_the_day__data__base__classification > span:last-child {
+  margin-left: 5px;
+}
+
+.book_of_the_day__data__mark {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 0px;
+  width: 100%;
+}
+
+.book_of_the_day__data__mark > i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffce33;
+}
+
+.book_of_the_day__data__mark > p {
+  width: 140px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: 40px;
+  color: white;
+  border-radius: 5px;
+}
+
+.top_adventures {
+  padding-left: 20px;
+}
+
+.top_adventures > h3 {
+  font-size: var(--main-title-font-size);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.top_adventures__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: scroll;
+}
+
+.top_adventures__info {
+  text-align: center;
+  margin-right: 15px;
+}
+
+.top_adventures__info__cover > img {
+  margin-bottom: 10px;
+  width: 90px;
+  height: 130px;
+  border-radius: 10px;
+}
+
+.book_of_the_day__data__base__rating {
+  font-size: 10px;
+}
+
+.popular_authors {
+  padding-left: 20px;
+}
+
+.popular_authors > h3 {
+  font-size: var(--main-title-font-size);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.popular_authors__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular_authors__info__cover > img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.popular_authoes__info__article {
+  margin: 0px 30px;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+}
+.popular_authors__info__article__name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 13px;
+  width: 150px;
+}
+
+.popular_authors__info__article__bio {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.fill {
+  color: #ffcf36;
 }
 
 .unfill {
-    color:black;
-    opacity:0.1;
-    border:none;
+  color: black;
+  opacity: 0.1;
+  border: none;
 }
