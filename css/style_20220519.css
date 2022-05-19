@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+:root {
+    --main-title-font-size: 30px;
+}
+
+body {
+    border: 1px black solid;
+    width:800px;
+    height:100vh;
+    
+    
+}
+
+.wrapper {
+    position:relative;
+    background-color:rgb(245,245,245);
+    
+}
+
+.menu {
+    background-color: #ffce33;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--main-title-font-size);
+}
+
+.menu > h1 {
+    font-weight: 600;
+}
+
+.searching {
+   width:95%;
+   background-color: white;
+   padding:25px 15px;
+   border-radius: 30px;
+   display: flex;
+   justify-content: space-between;
+   position:absolute; 
+   top:120px;
+   left:2.5%;
+}
+
+.searching__content{
+    opacity:0.3;
+    font-size: 20px;
+}
+
+.searching__content:first-child{
+    margin-left:15px;
+}
+
+.book_of_the_day{
+    padding:80px 25px;
+}
+
+.fill{
+    color:#ffcf36;
+}
+
+.unfill {
+    color:black;
+    opacity:0.1;
+    border:none;
+}
