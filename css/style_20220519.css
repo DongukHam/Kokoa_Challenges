@@ -6,14 +6,22 @@
   --main-title-font-size: 30px;
 }
 
+input:focus {
+  outline: none;
+}
+
 body {
   width: 500px;
   height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0 auto;
 }
 
 .wrapper {
   position: relative;
-  background-color: rgb(245, 245, 245);
+  /* background-color: rgb(245, 245, 245); */
+  margin: 0 auto;
+
 }
 
 .menu {
@@ -32,20 +40,38 @@ body {
 .searching {
   width: 95%;
   background-color: white;
-  padding: 25px 15px;
+  padding: 15px 15px;
   border-radius: 30px;
   display: flex;
   justify-content: space-between;
   position: absolute;
   top: 120px;
   left: 2.5%;
-  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.10), 0 10px 10px rgba(0,0,0,0.10);
 }
+
+.searching>input{
+  border:none;
+}
+
+.searching>input:focus-within {
+  
+}
+
+.searching > i {
+  position:absolute;
+  top:16px;
+  right:20px;
+  opacity:0.1;
+}
+
+
 
 .searching__content {
   opacity: 0.3;
   font-size: 20px;
 }
+
 
 .searching__content:first-child {
   margin-left: 15px;
@@ -168,6 +194,7 @@ h3 {
 
 .book_of_the_day__data__base__rating {
   font-size: 10px;
+  display: block;
 }
 
 .popular_authors {
@@ -194,17 +221,17 @@ h3 {
 .popular_authoes__info__article {
   margin: 0px 30px;
   width: 50%;
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  align-items: center;
+  align-items: center; */
 }
 .popular_authors__info__article__name {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 13px;
-  width: 150px;
+  display: block;
 }
 
 .popular_authors__info__article__bio {
